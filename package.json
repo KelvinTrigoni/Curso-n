@@ -1,0 +1,35 @@
+{
+  "name": "cursonode",
+  "version": "1.0.0",
+  "description": "Curso-Udemy",
+  "main": "index.js",
+  "dependencies": {
+    "yarn": "^1.21.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KelvinTrigoni/Curso-n.git"
+  },
+  "keywords": [
+    "nodejs",
+    "npm",
+    "express",
+    "fs",
+    "path",
+    "url",
+    "mongodb",
+    "udp",
+    "crypto"
+  ],
+  "author": "Kelvin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KelvinTrigoni/Curso-n/issues"
+  },
+  "homepage": "https://github.com/KelvinTrigoni/Curso-n#readme"
+}
