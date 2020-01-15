@@ -2,8 +2,9 @@
   "name": "cursonode",
   "version": "1.0.0",
   "description": "Curso-Udemy",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
+    "nodemon": "^2.0.2",
     "yarn": "^1.21.1"
   },
   "devDependencies": {},
