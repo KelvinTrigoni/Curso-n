@@ -2,6 +2,10 @@ const { spawn } = require('child_process');
 var parms = process.argv[2];
 var videos = [];
 
+console.log(process.argv[2]);
+console.log(process.argv[3]);
+console.log(process.argv[4]);
+
 if (process.argv[2]) {
     var nomeVideo = process.argv[3];
     var nomeFinal = process.argv[4];
@@ -15,7 +19,7 @@ if (process.argv[2]) {
 
 function videoR(video, qualidade) {
     var p = new Promise((resolve, reject) => {
-        var ffmpeg = spawn('./ffmpeg/bin/ffmpeg', [
+        var ffmpeg = spawn('../teste/bin/ffmpeg', [
             '-i',
             `${parms}/${video}.mp4`,
             '-codec:v',
@@ -40,7 +44,7 @@ function videoR(video, qualidade) {
         ]);
 
         ffmpeg.stderr.on('data', (data) => {
-            console.log(data);
+           // console.log(data);
         });
         ffmpeg.on('close', (code) => {
             resolve();
